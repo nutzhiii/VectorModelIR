@@ -28,8 +28,8 @@ namespace VectorModelIR
         {
             Dictionary<string, int> termDocumentAndFrequency = new Dictionary<string, int>();
             var indexTermNotClean = Regex.Replace(content, @"[^\w\s]", string.Empty).Split(new char[] { '\r', '\n', '\t', ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-            //List<string> indexTermDocument = indexTermNotClean.Distinct().Where(e => !StopAnalyzer.ENGLISH_STOP_WORDS_SET.Contains(e)).ToList();
-            List<string> indexTermDocument = indexTermNotClean.Distinct().ToList();
+            List<string> indexTermDocument = indexTermNotClean.Distinct().Where(e => !StopAnalyzer.ENGLISH_STOP_WORDS_SET.Contains(e)).ToList();
+            //List<string> indexTermDocument = indexTermNotClean.Distinct().ToList();
 
             //frequency
             foreach (var item in indexTermDocument)

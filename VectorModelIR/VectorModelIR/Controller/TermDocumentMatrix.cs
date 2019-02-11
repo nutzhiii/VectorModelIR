@@ -76,6 +76,7 @@ namespace VectorModelIR
 
         public double CalculateIDF(double numberOfTermIndocument, double numberOfDocument)
         {
+            // 0/0 what ?
             double result = 0.0;
             double sumOfNumberOfTermDividNumberOfDocument = 0.0;
             if (numberOfTermIndocument > 0)

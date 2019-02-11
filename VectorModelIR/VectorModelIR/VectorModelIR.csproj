@@ -70,7 +70,7 @@
     <Content Include="Appdata\It Time To Fix Testing.txt" />
     <Content Include="Appdata\Nobody Knows How To Learn A Language.txt" />
     <Content Include="Appdata\The Cost of Working in Education.txt" />
-    <Content Include="Appdata\tt.xml" />
+    <Content Include="Appdata\Why We Need More Testing Not Less.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
