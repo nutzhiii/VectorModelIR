@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ConsoleTableExt, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ConsoleTableExt.2.0.2\lib\net45\ConsoleTableExt.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,11 +52,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="VectorModelIR.cs" />
+    <Compile Include="Controller\CalculateSimilarityCosine.cs" />
+    <Compile Include="Controller\DisplayResult.cs" />
+    <Compile Include="Controller\Files.cs" />
+    <Compile Include="Controller\TermDocumentMatrix.cs" />
+    <Compile Include="Models\DocumentModelcs.cs" />
+    <Compile Include="Models\TermDocumentMatrixModel.cs" />
+    <Compile Include="Controller\VectorModelIR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appdata\How To Teach A Cyborg.txt" />
+    <Content Include="Appdata\It Time To Fix Testing.txt" />
+    <Content Include="Appdata\Nobody Knows How To Learn A Language.txt" />
+    <Content Include="Appdata\The Cost of Working in Education.txt" />
+    <Content Include="Appdata\tt.xml" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
